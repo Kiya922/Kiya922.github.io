@@ -1,0 +1,43 @@
+h1{
+    display: block;
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+}
+
+.cards td{
+    width: 25%;
+}
+
+.card{
+    width: 100%;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.card-picture{
+    width: 100%;
+}
+
+.card-name{
+    text-align: center;
+    font-size: 10px;
+    height: 50px;
+    background-color: #ff8808;
+}
+
+.dialog{
+    width: 80%;
+    border: 0;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+    position: fixed;
+    margin: 100px 10%;
+    display: none;
+}
+
+.dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.911);
+}
