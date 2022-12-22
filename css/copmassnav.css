@@ -8,36 +8,39 @@ body {
 }
 
 .menu_link {
-    color: #0000ff;
+    color: #000000;
     text-decoration: none;
+    padding: 10% 30%;
 }
 
 .menu_link:hover {
-    color: #ff0000;
+    background: #aaaaaa;
 }
 
 .menu_list {
     list-style: none;
+    display: flex;
     align-items: center;
+    padding-left: 0;
 }
 
 .menu_item {
-    width: 22%;
-    float: left;
+    width: 30%;
     display: block;
 }
 
 .menu_f {
-    width: 68%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    float: right;
+    justify-content: left;
+    top: 0;
 }
 
 .menu {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin-left: 20%;
 }
 
 nav {
