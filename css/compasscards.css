@@ -3,27 +3,27 @@ h1{
     width: 100%;
 }
 
-.card-menu {
+.card-rare {
     width: 100%;
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-.card-menu li {
+.card-rare li {
     width: 20%;
     border: 2px solid;
     text-align: center;
 }
 
-.card-menu li a {
+.card-rare li a {
     display: block;
     text-decoration: none;
     color: #000000;
     padding: 5px 0;
 }
 
-.card-menu li a:hover {
+.card-rare li a:hover {
     background: #aaaaaa;
 }
 
