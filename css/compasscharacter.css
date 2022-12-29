@@ -1,3 +1,17 @@
+.character-menu{
+    width: 100%;
+    border: 2px solid;
+    text-align: center;
+}
+
+.character-menu .role{
+    width: 25%;
+}
+
+.character-menu button{
+    width: 100%;
+}
+
 .character{
     width: 23%;
     display: flex;
@@ -6,6 +20,7 @@
     text-align: center;
     margin: 1%;
     background: #ff8808;
+    flex-wrap: wrap;
 }
 
 .character a{
