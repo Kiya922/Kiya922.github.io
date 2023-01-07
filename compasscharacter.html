@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-    
+
     <article>
         <div class="layout-left">
             <ul class="linkmenu">
@@ -48,70 +48,83 @@
             </ul>
         </div>
         <div class="layout-center">
-            <table class="character-menu">
-                <tr>
-                    <td colspan="4"><button id="all_btn">ALL</button></td>
-                </tr>
-                <tr>
-                    <td colspan="4">職業</td>
-                </tr>
-                <tr>
-                    <td class="role"><button id="attacker_btn">戰士</button></td>
-                    <td class="role"><button id="gunner_btn">射手</button></td>
-                    <td class="role"><button id="tank_btn">坦克</button></td>
-                    <td class="role"><button id="sprinter_btn">跑者</button></td>
-                </tr>
-                <tr>
-                    <td colspan="4">系列</td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="4"><button id="original_btn">原創</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="GG_btn">聖騎士之戰 Guilty Gear</button></td>
-                    <td class="series" colspan="2"><button id="Voca_btn">Vocaloid</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="SFV_btn">快打旋風V</button></td>
-                    <td class="series" colspan="2"><button id="Re0_btn">Re:從零開始的異世界生活</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="AngelsofDeath_btn">殺戮的天使</button></td>
-                    <td class="series" colspan="2"><button id="Danganronpa_btn">槍彈辯駁</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="Konosuba_btn">為美好的世界獻上祝福！</button></td>
-                    <td class="series" colspan="2"><button id="Kyojin_btn">進擊的巨人</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="Nekomiya_btn">貓宮日向</button></td>
-                    <td class="series" colspan="2"><button id="SteinGate_btn">命運石之門 Steins;Gate</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="Fate_btn">Fate/stay night[Heaven's Feel]</button></td>
-                    <td class="series" colspan="2"><button id="KaBuKi_btn">超歌舞伎×千本櫻</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="Danmachi_btn">在地下城尋求邂逅是否搞錯了什麼III</button></td>
-                    <td class="series" colspan="2"><button id="FFXV_btn">FINAL FANTASY XV</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="StrayDogs_btn">文豪野犬</button></td>
-                    <td class="series" colspan="2"><button id="Ryza_btn">萊莎的鍊金工房2 ～失落傳說與秘密妖精～</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="P5_btn">女神異聞錄5</button></td>
-                    <td class="series" colspan="2"><button id="OverlordIV_btn">OVERLORD IV</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="SAO_btn">刀劍神域 SWORD ART ONLINE</button></td>
-                    <td class="series" colspan="2"><button id="NieR_btn">尼爾：自動人形 NieR:Automata</button></td>
-                </tr>
-                <tr>
-                    <td class="series" colspan="2"><button id="Slime_btn">關於我轉生變成史萊姆這檔事</button></td>
-                    <td class="series" colspan="2"><button id="RailgunT_btn">科學超電磁砲T</button></td>
-                </tr>
-            </table>
+            <h1>角色一覽</h1>
+            <div class="show-button">
+                <button id="show"><p id="check">✔</p>顯示變更</button>
+            </div>
+            <div id="character-f">
+            <div id="character-menu">
+                <table class="character-menu">
+                    <tr>
+                        <td colspan="4"><button id="all_btn">ALL</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">職業</td>
+                    </tr>
+                    <tr>
+                        <td class="role"><button id="attacker_btn">戰士</button></td>
+                        <td class="role"><button id="gunner_btn">射手</button></td>
+                        <td class="role"><button id="tank_btn">坦克</button></td>
+                        <td class="role"><button id="sprinter_btn">跑者</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">系列</td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="4"><button id="original_btn">原創</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="GG_btn">聖騎士之戰 Guilty Gear</button></td>
+                        <td class="series" colspan="2"><button id="Voca_btn">Vocaloid</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="SFV_btn">快打旋風V</button></td>
+                        <td class="series" colspan="2"><button id="Re0_btn">Re:從零開始的異世界生活</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="AngelsofDeath_btn">殺戮的天使</button></td>
+                        <td class="series" colspan="2"><button id="Danganronpa_btn">槍彈辯駁</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="Konosuba_btn">為美好的世界獻上祝福！</button></td>
+                        <td class="series" colspan="2"><button id="Kyojin_btn">進擊的巨人</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="Nekomiya_btn">貓宮日向</button></td>
+                        <td class="series" colspan="2"><button id="SteinGate_btn">命運石之門 Steins;Gate</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="Fate_btn">Fate/stay night[Heaven's Feel]</button>
+                        </td>
+                        <td class="series" colspan="2"><button id="KaBuKi_btn">超歌舞伎×千本櫻</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="Danmachi_btn">在地下城尋求邂逅是否搞錯了什麼III</button></td>
+                        <td class="series" colspan="2"><button id="FFXV_btn">FINAL FANTASY XV</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="StrayDogs_btn">文豪野犬</button></td>
+                        <td class="series" colspan="2"><button id="Ryza_btn">萊莎的鍊金工房2 ～失落傳說與秘密妖精～</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="P5_btn">女神異聞錄5</button></td>
+                        <td class="series" colspan="2"><button id="OverlordIV_btn">OVERLORD IV</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="SAO_btn">刀劍神域 SWORD ART ONLINE</button></td>
+                        <td class="series" colspan="2"><button id="NieR_btn">尼爾：自動人形 NieR:Automata</button></td>
+                    </tr>
+                    <tr>
+                        <td class="series" colspan="2"><button id="Slime_btn">關於我轉生變成史萊姆這檔事</button></td>
+                        <td class="series" colspan="2"><button id="RailgunT_btn">科學超電磁砲T</button></td>
+                    </tr>
+                </table>
+                <div class="check-button">
+                    <button id="cancel">取消</button>
+                    <button id="OK">確定</button>
+                </div>
+            </div>
+            </div>
 
             <div class="original character sprinter">
                 <a href=""><img src="./img/character/001.jpg">十文字 中</a>

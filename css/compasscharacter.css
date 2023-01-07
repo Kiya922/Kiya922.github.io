@@ -1,7 +1,54 @@
-.character-menu{
+h1{
     width: 100%;
-    border: 2px solid;
+}
+
+hr{
+    width: 100%;
+}
+
+.show-button{
+    width: 100%;
+}
+
+.show-button p{
+    margin: 0 auto;
+}
+
+#show{
+    display: flex;
+    float: right;
+    background-color: #5e648b;
+    color: white;
+    border: 4px solid #46435b;
+    border-radius: 2px;
+}
+
+#character-f{
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    display: none;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+#character-menu{
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 6px #cccccc;
+    border-radius: 10px;
+    display: flex;
+    margin: auto 5%;
+    flex-wrap: wrap;
+}
+
+.character-menu{
+    width: 90%;
     text-align: center;
+    margin: 20px 5%;
 }
 
 .character-menu .role{
@@ -10,6 +57,31 @@
 
 .character-menu button{
     width: 100%;
+}
+
+.check-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+#cancel{
+    width: 15%;
+    background-color: #000000;
+    color: white;
+    border: 4px solid #444444;
+    border-radius: 2px;
+}
+
+#OK{
+    width: 15%;
+    background-color: #ff8808;
+    color: white;
+    border: 4px solid #9b5305;
+    border-radius: 2px;
 }
 
 .character{

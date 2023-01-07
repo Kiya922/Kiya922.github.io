@@ -1,3 +1,9 @@
+var show = document.getElementById("show");
+var check = document.getElementById("check");
+var charactermenu = document.getElementById("character-f");
+var cancel = document.getElementById("cancel");
+var OK = document.getElementById("OK");
+
 var character = document.getElementsByClassName("character");
 var attacker = document.getElementsByClassName("attacker");
 var gunner = document.getElementsByClassName("gunner");
@@ -56,9 +62,28 @@ var NieR_btn = document.getElementById("NieR_btn");
 var Slime_btn = document.getElementById("Slime_btn");
 var RailgunT_btn = document.getElementById("RailgunT_btn");
 
+show.addEventListener("click", function(){
+    charactermenu.style.display = "flex";
+    document.body.style.overflow = "hidden";
+})
+
+cancel.addEventListener("click", function(){
+    charactermenu.style.display = "none";
+    document.body.style.overflow = "auto";
+    for(var x = 0; x < character.length; x++){
+        document.getElementsByClassName("character")[x].style.display="flex";
+    }
+    check.style.color = "#ffffff";
+})
+
+OK.addEventListener("click", function(){
+    charactermenu.style.display = "none";
+    document.body.style.overflow = "auto";
+    check.style.color = "#ff8808";
+})
 
 all_btn.addEventListener("click", function(){
-    for(var x = 0; x < character.length; x++){
+    for(x = 0; x < character.length; x++){
         document.getElementsByClassName("character")[x].style.display="flex";
     }
 })
