@@ -68,7 +68,7 @@ hr{
     align-items: center;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .character-menu button{
