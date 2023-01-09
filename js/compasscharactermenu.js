@@ -1,7 +1,6 @@
 var show = document.getElementById("show");
 var check = document.getElementById("check");
 var charactermenu = document.getElementById("character-f");
-var cancel = document.getElementById("cancel");
 var OK = document.getElementById("OK");
 
 var character = document.getElementsByClassName("character");
@@ -33,7 +32,7 @@ var NieR = document.getElementsByClassName("NieR");
 var Slime = document.getElementsByClassName("Slime");
 var RailgunT = document.getElementsByClassName("RailgunT");
 
-var all_btn = document.getElementById("all_btn");
+var counter = 0;
 var attacker_btn = document.getElementById("attacker_btn");
 var gunner_btn = document.getElementById("gunner_btn");
 var tank_btn = document.getElementById("tank_btn");
@@ -62,271 +61,567 @@ var NieR_btn = document.getElementById("NieR_btn");
 var Slime_btn = document.getElementById("Slime_btn");
 var RailgunT_btn = document.getElementById("RailgunT_btn");
 
+var character_counter = 0;
+var attacker_counter = 0;
+var gunner_counter = 0;
+var tank_counter = 0;
+var sprinter_counter = 0;
+var original_counter = 0;
+var GG_counter = 0;
+var Voca_counter = 0;
+var SFV_counter = 0;
+var Re0_counter = 0;
+var AngelsofDeath_counter = 0;
+var Danganronpa_counter = 0;
+var Konosuba_counter = 0;
+var Kyojin_counter = 0;
+var Nekomiya_counter = 0;
+var SteinGate_counter = 0;
+var Fate_counter = 0;
+var KaBuKi_counter = 0;
+var Danmachi_counter = 0;
+var FFXV_counter = 0;
+var StrayDogs_counter = 0;
+var Ryza_counter = 0;
+var P5_counter = 0;
+var OverlordIV_counter = 0;
+var SAO_counter = 0;
+var NieR_counter = 0;
+var Slime_counter = 0;
+var RailgunT_counter = 0;
+
 show.addEventListener("click", function(){
     charactermenu.style.display = "flex";
     document.body.style.overflow = "hidden";
 })
 
-cancel.addEventListener("click", function(){
-    charactermenu.style.display = "none";
-    document.body.style.overflow = "auto";
-    for(var x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="flex";
-    }
-    check.style.color = "#ffffff";
-})
-
 OK.addEventListener("click", function(){
     charactermenu.style.display = "none";
     document.body.style.overflow = "auto";
-    check.style.color = "#ff8808";
-})
 
-all_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="flex";
+    if(counter == 0){
+        for(var x = 0; x < character.length; x++){
+            document.getElementsByClassName("character")[x].style.display="flex";
+        }
+        check.style.color = "#ffffff";
+    }
+    else{
+        for(var x = 0; x < character.length; x++){
+            document.getElementsByClassName("character")[x].style.display="none";
+        }
+        check.style.color = "#ff8808";
+    }
+
+    if(attacker_counter == 1){
+        for(x = 0; x < attacker.length; x++){
+            document.getElementsByClassName("attacker")[x].style.display="flex";
+        }
+    }
+
+    if(gunner_counter == 1){
+        for(x = 0; x < gunner.length; x++){
+            document.getElementsByClassName("gunner")[x].style.display="flex";
+        }
+    }
+
+    if(tank_counter == 1){
+        for(x = 0; x < tank.length; x++){
+            document.getElementsByClassName("tank")[x].style.display="flex";
+        }
+    }
+
+    if(sprinter_counter == 1){
+        for(x = 0; x < sprinter.length; x++){
+            document.getElementsByClassName("sprinter")[x].style.display="flex";
+        }
+    }
+
+    if(original_counter == 1){
+        for(x = 0; x < original.length; x++){
+            document.getElementsByClassName("original")[x].style.display="flex";
+        }
+    }
+
+    if(GG_counter == 1){
+        for(x = 0; x < GG.length; x++){
+            document.getElementsByClassName("GG")[x].style.display="flex";
+        }
+    }
+
+    if(Voca_counter == 1){
+        for(x = 0; x < Voca.length; x++){
+            document.getElementsByClassName("Voca")[x].style.display="flex";
+        }
+    }
+
+    if(SFV_counter == 1){
+        for(x = 0; x < SFV.length; x++){
+            document.getElementsByClassName("SFV")[x].style.display="flex";
+        }
+    }
+
+    if(Re0_counter == 1){
+        for(x = 0; x < Re0.length; x++){
+            document.getElementsByClassName("Re0")[x].style.display="flex";
+        }
+    }
+
+    if(AngelsofDeath_counter == 1){
+        for(x = 0; x < AngelsofDeath.length; x++){
+            document.getElementsByClassName("AngelsofDeath")[x].style.display="flex";
+        }
+    }
+
+    if(Danganronpa_counter == 1){
+        for(x = 0; x < Danganronpa.length; x++){
+            document.getElementsByClassName("Danganronpa")[x].style.display="flex";
+        }
+    }
+
+    if(Konosuba_counter == 1){
+        for(x = 0; x < Konosuba.length; x++){
+            document.getElementsByClassName("Konosuba")[x].style.display="flex";
+        }
+    }
+
+    if(Kyojin_counter == 1){
+        for(x = 0; x < Kyojin.length; x++){
+            document.getElementsByClassName("Kyojin")[x].style.display="flex";
+        }
+    }
+
+    if(Nekomiya_counter == 1){
+        for(x = 0; x < Nekomiya.length; x++){
+            document.getElementsByClassName("Nekomiya")[x].style.display="flex";
+        }
+    }
+
+    if(SteinGate_counter == 1){
+        for(x = 0; x < SteinGate.length; x++){
+            document.getElementsByClassName("SteinGate")[x].style.display="flex";
+        }
+    }
+
+    if(Fate_counter == 1){
+        for(x = 0; x < Fate.length; x++){
+            document.getElementsByClassName("Fate")[x].style.display="flex";
+        }
+    }
+
+    if(KaBuKi_counter == 1){
+        for(x = 0; x < KaBuKi.length; x++){
+            document.getElementsByClassName("KaBuKi")[x].style.display="flex";
+        }
+    }
+
+    if(Danmachi_counter == 1){
+        for(x = 0; x < Danmachi.length; x++){
+            document.getElementsByClassName("Danmachi")[x].style.display="flex";
+        }
+    }
+
+    if(FFXV_counter == 1){
+        for(x = 0; x < FFXV.length; x++){
+            document.getElementsByClassName("FFXV")[x].style.display="flex";
+        }
+    }
+
+    if(StrayDogs_counter == 1){
+        for(x = 0; x < StrayDogs.length; x++){
+            document.getElementsByClassName("StrayDogs")[x].style.display="flex";
+        }
+    }
+
+    if(Ryza_counter == 1){
+        for(x = 0; x < Ryza.length; x++){
+            document.getElementsByClassName("Ryza")[x].style.display="flex";
+        }
+    }
+
+    if(P5_counter == 1){
+        for(x = 0; x < P5.length; x++){
+            document.getElementsByClassName("P5")[x].style.display="flex";
+        }
+    }
+
+    if(OverlordIV_counter == 1){
+        for(x = 0; x < OverlordIV.length; x++){
+            document.getElementsByClassName("OverlordIV")[x].style.display="flex";
+        }
+    }
+
+    if(SAO_counter == 1){
+        for(x = 0; x < SAO.length; x++){
+            document.getElementsByClassName("SAO")[x].style.display="flex";
+        }
+    }
+
+    if(NieR_counter == 1){
+        for(x = 0; x < NieR.length; x++){
+            document.getElementsByClassName("NieR")[x].style.display="flex";
+        }
+    }
+
+    if(Slime_counter == 1){
+        for(x = 0; x < Slime.length; x++){
+            document.getElementsByClassName("Slime")[x].style.display="flex";
+        }
+    }
+
+    if(RailgunT_counter == 1){
+        for(x = 0; x < RailgunT.length; x++){
+            document.getElementsByClassName("RailgunT")[x].style.display="flex";
+        }
     }
 })
 
 attacker_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(attacker_counter == 0){
+        attacker_counter = 1;
+        counter = counter + 1;
+        attacker_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < attacker.length; x++){
-        document.getElementsByClassName("attacker")[x].style.display="flex";
+    else{
+        attacker_counter = 0;
+        counter = counter - 1;
+        attacker_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 gunner_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(gunner_counter == 0){
+        gunner_counter = 1;
+        counter = counter + 1;
+        gunner_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < gunner.length; x++){
-        document.getElementsByClassName("gunner")[x].style.display="flex";
+    else{
+        gunner_counter = 0;
+        counter = counter - 1;
+        gunner_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 tank_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(tank_counter == 0){
+        tank_counter = 1;
+        counter = counter + 1;
+        tank_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < tank.length; x++){
-        document.getElementsByClassName("tank")[x].style.display="flex";
+    else{
+        tank_counter = 0;
+        counter = counter - 1;
+        tank_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 sprinter_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(sprinter_counter == 0){
+        sprinter_counter = 1;
+        counter = counter + 1;
+        sprinter_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < sprinter.length; x++){
-        document.getElementsByClassName("sprinter")[x].style.display="flex";
+    else{
+        sprinter_counter = 0;
+        counter = counter - 1;
+        sprinter_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 original_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(original_counter == 0){
+        original_counter = 1;
+        counter = counter + 1;
+        original_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < original.length; x++){
-        document.getElementsByClassName("original")[x].style.display="flex";
+    else{
+        original_counter = 0;
+        counter = counter - 1;
+        original_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 GG_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(GG_counter == 0){
+        GG_counter = 1;
+        counter = counter + 1;
+        GG_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < GG.length; x++){
-        document.getElementsByClassName("GG")[x].style.display="flex";
+    else{
+        GG_counter = 0;
+        counter = counter - 1;
+        GG_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Voca_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Voca_counter == 0){
+        Voca_counter = 1;
+        counter = counter + 1;
+        Voca_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Voca.length; x++){
-        document.getElementsByClassName("Voca")[x].style.display="flex";
+    else{
+        Voca_counter = 0;
+        counter = counter - 1;
+        Voca_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 SFV_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(SFV_counter == 0){
+        SFV_counter = 1;
+        counter = counter + 1;
+        SFV_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < SFV.length; x++){
-        document.getElementsByClassName("SFV")[x].style.display="flex";
+    else{
+        SFV_counter = 0;
+        counter = counter - 1;
+        SFV_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Re0_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Re0_counter == 0){
+        Re0_counter = 1;
+        counter = counter + 1;
+        Re0_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Re0.length; x++){
-        document.getElementsByClassName("Re0")[x].style.display="flex";
+    else{
+        Re0_counter = 0;
+        counter = counter - 1;
+        Re0_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 AngelsofDeath_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(AngelsofDeath_counter == 0){
+        AngelsofDeath_counter = 1;
+        counter = counter + 1;
+        AngelsofDeath_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < AngelsofDeath.length; x++){
-        document.getElementsByClassName("AngelsofDeath")[x].style.display="flex";
+    else{
+        AngelsofDeath_counter = 0;
+        counter = counter - 1;
+        AngelsofDeath_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Danganronpa_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Danganronpa_counter == 0){
+        Danganronpa_counter = 1;
+        counter = counter + 1;
+        Danganronpa_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Danganronpa.length; x++){
-        document.getElementsByClassName("Danganronpa")[x].style.display="flex";
+    else{
+        Danganronpa_counter = 0;
+        counter = counter - 1;
+        Danganronpa_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Konosuba_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Konosuba_counter == 0){
+        Konosuba_counter = 1;
+        counter = counter + 1;
+        Konosuba_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Konosuba.length; x++){
-        document.getElementsByClassName("Konosuba")[x].style.display="flex";
+    else{
+        Konosuba_counter = 0;
+        counter = counter - 1;
+        Konosuba_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Kyojin_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Kyojin_counter == 0){
+        Kyojin_counter = 1;
+        counter = counter + 1;
+        Kyojin_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Kyojin.length; x++){
-        document.getElementsByClassName("Kyojin")[x].style.display="flex";
+    else{
+        Kyojin_counter = 0;
+        counter = counter - 1;
+        Kyojin_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Nekomiya_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Nekomiya_counter == 0){
+        Nekomiya_counter = 1;
+        counter = counter + 1;
+        Nekomiya_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Nekomiya.length; x++){
-        document.getElementsByClassName("Nekomiya")[x].style.display="flex";
+    else{
+        Nekomiya_counter = 0;
+        counter = counter - 1;
+        Nekomiya_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 SteinGate_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(SteinGate_counter == 0){
+        SteinGate_counter = 1;
+        counter = counter + 1;
+        SteinGate_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < SteinGate.length; x++){
-        document.getElementsByClassName("SteinGate")[x].style.display="flex";
+    else{
+        SteinGate_counter = 0;
+        counter = counter - 1;
+        SteinGate_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Fate_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Fate_counter == 0){
+        Fate_counter = 1;
+        counter = counter + 1;
+        Fate_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Fate.length; x++){
-        document.getElementsByClassName("Fate")[x].style.display="flex";
+    else{
+        Fate_counter = 0;
+        counter = counter - 1;
+        Fate_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 KaBuKi_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(KaBuKi_counter == 0){
+        KaBuKi_counter = 1;
+        counter = counter + 1;
+        KaBuKi_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < KaBuKi.length; x++){
-        document.getElementsByClassName("KaBuKi")[x].style.display="flex";
+    else{
+        KaBuKi_counter = 0;
+        counter = counter - 1;
+        KaBuKi_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Danmachi_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Danmachi_counter == 0){
+        Danmachi_counter = 1;
+        counter = counter + 1;
+        Danmachi_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Danmachi.length; x++){
-        document.getElementsByClassName("Danmachi")[x].style.display="flex";
+    else{
+        Danmachi_counter = 0;
+        counter = counter - 1;
+        Danmachi_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 FFXV_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(FFXV_counter == 0){
+        FFXV_counter = 1;
+        counter = counter + 1;
+        FFXV_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < FFXV.length; x++){
-        document.getElementsByClassName("FFXV")[x].style.display="flex";
+    else{
+        FFXV_counter = 0;
+        counter = counter - 1;
+        FFXV_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 StrayDogs_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(StrayDogs_counter == 0){
+        StrayDogs_counter = 1;
+        counter = counter + 1;
+        StrayDogs_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < StrayDogs.length; x++){
-        document.getElementsByClassName("StrayDogs")[x].style.display="flex";
+    else{
+        StrayDogs_counter = 0;
+        counter = counter - 1;
+        StrayDogs_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Ryza_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Ryza_counter == 0){
+        Ryza_counter = 1;
+        counter = counter + 1;
+        Ryza_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Ryza.length; x++){
-        document.getElementsByClassName("Ryza")[x].style.display="flex";
+    else{
+        Ryza_counter = 0;
+        counter = counter - 1;
+        Ryza_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 P5_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(P5_counter == 0){
+        P5_counter = 1;
+        counter = counter + 1;
+        P5_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < P5.length; x++){
-        document.getElementsByClassName("P5")[x].style.display="flex";
+    else{
+        P5_counter = 0;
+        counter = counter - 1;
+        P5_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 OverlordIV_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(OverlordIV_counter == 0){
+        OverlordIV_counter = 1;
+        counter = counter + 1;
+        OverlordIV_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < OverlordIV.length; x++){
-        document.getElementsByClassName("OverlordIV")[x].style.display="flex";
+    else{
+        OverlordIV_counter = 0;
+        counter = counter - 1;
+        OverlordIV_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 SAO_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(SAO_counter == 0){
+        SAO_counter = 1;
+        counter = counter + 1;
+        SAO_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < SAO.length; x++){
-        document.getElementsByClassName("SAO")[x].style.display="flex";
+    else{
+        SAO_counter = 0;
+        counter = counter - 1;
+        SAO_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 NieR_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(NieR_counter == 0){
+        NieR_counter = 1;
+        counter = counter + 1;
+        NieR_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < NieR.length; x++){
-        document.getElementsByClassName("NieR")[x].style.display="flex";
+    else{
+        NieR_counter = 0;
+        counter = counter - 1;
+        NieR_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 Slime_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(Slime_counter == 0){
+        Slime_counter = 1;
+        counter = counter + 1;
+        Slime_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < Slime.length; x++){
-        document.getElementsByClassName("Slime")[x].style.display="flex";
+    else{
+        Slime_counter = 0;
+        counter = counter - 1;
+        Slime_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
 
 RailgunT_btn.addEventListener("click", function(){
-    for(x = 0; x < character.length; x++){
-        document.getElementsByClassName("character")[x].style.display="none";
+    if(RailgunT_counter == 0){
+        RailgunT_counter = 1;
+        counter = counter + 1;
+        RailgunT_btn.style="background-color: #000000; border: 4px solid #444444;";
     }
-    for(x = 0; x < RailgunT.length; x++){
-        document.getElementsByClassName("RailgunT")[x].style.display="flex";
+    else{
+        RailgunT_counter = 0;
+        counter = counter - 1;
+        RailgunT_btn.style="background-color: #70707080; border: 4px solid #94949480;";
     }
 })
