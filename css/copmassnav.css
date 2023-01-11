@@ -61,7 +61,7 @@ nav {
     width: 100%;
 }
 
-@media screen and (max-width:1200px){
+@media (max-width:1200px){
     .menu{
         margin-left: 5%;
     }
