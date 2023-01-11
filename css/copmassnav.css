@@ -55,10 +55,18 @@ nav {
     padding: 10px;
 }
 
-:root{
-    --h: 100%;
-}
-
 .construction{
     width: 100%;
+}
+
+@media (max-width:1024px){
+    .menu{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:768px){
+    .menu{
+        display: none;
+    }
 }

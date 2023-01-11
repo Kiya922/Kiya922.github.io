@@ -48,3 +48,31 @@ article {
     margin-bottom: 10px;
     display: block;
 }
+
+@media (max-width:1024px){
+    .layout-left{
+        width: 30%
+    }
+
+    .layout-center{
+        width: 70%;
+    }
+
+    .layout-right{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .layout-left{
+        display: none;
+    }
+
+    .layout-center{
+        width: 100%;
+    }
+
+    .layout-right{
+        display: none;
+    }
+}
