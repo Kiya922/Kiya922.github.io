@@ -133,6 +133,17 @@ hr{
     #OK{
         font-size: 20px;
     }
+
+    #character-menu{
+        width: 90%;
+        background-color: #ffffff;
+        border: none;
+        box-shadow: 0 2px 6px #cccccc;
+        border-radius: 10px;
+        display: flex;
+        margin: 5% 5% auto;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 520px) {
