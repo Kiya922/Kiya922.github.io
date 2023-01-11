@@ -61,13 +61,13 @@ nav {
     width: 100%;
 }
 
-@media (max-width:1200px){
+@media screen and (max-width:1200px){
     .menu{
         margin-left: 5%;
     }
 }
 
-@media (max-width:1000px){
+@media screen and (max-device-width:768px){
     .menu{
         display: none;
     }
