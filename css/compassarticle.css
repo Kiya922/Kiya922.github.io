@@ -63,7 +63,7 @@ article {
     }
 }
 
-@media (max-width:1000px){
+@media screen and (max-device-width:768px){
     .layout-left{
         display: none;
     }
