@@ -63,6 +63,20 @@ article {
     }
 }
 
+@media (max-width:800px){
+    .layout-left{
+        display: none;
+    }
+
+    .layout-center{
+        width: 100%;
+    }
+
+    .layout-right{
+        display: none;
+    }
+}
+
 @media screen and (max-device-width:768px){
     .layout-left{
         display: none;

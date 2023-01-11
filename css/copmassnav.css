@@ -63,7 +63,27 @@ nav {
 
 @media (max-width:1200px){
     .menu{
-        margin-left: 5%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:800px){
+    .menu{
+        display: none;
+    }
+
+    .menu_f {
+        justify-content: center;
+    }
+
+    .menu_f a{
+        width: auto;
+        height: 80px;
+    }
+
+    .logo{
+        width: auto;
+        height:100%;
     }
 }
 
