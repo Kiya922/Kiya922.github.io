@@ -127,11 +127,13 @@ hr{
     }
 
     .character-menu button{
+        height: 50px;
         font-size: 20px;
+        margin: 5%;
     }
 
     #OK{
-        font-size: 20px;
+        font-size: 60px;
     }
 
     #character-menu{
