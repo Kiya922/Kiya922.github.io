@@ -122,6 +122,18 @@ hr{
     .character a{
         font-size: 35px;
     }
+
+    #show{
+        font-size: 35px;
+    }
+
+    .character-menu button{
+        font-size: 35px;
+    }
+
+    #OK{
+        font-size: 35%;
+    }
 }
 
 @media (max-width: 520px) {
