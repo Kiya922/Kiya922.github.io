@@ -31,7 +31,7 @@ article {
     width: 50%;
     background-color: #ffffff;
     padding: 10px;
-    margin: 0 1%;
+    margin:  0 1% auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

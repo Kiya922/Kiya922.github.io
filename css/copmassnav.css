@@ -54,3 +54,11 @@ nav {
     background-color: #ffffff;
     padding: 10px;
 }
+
+:root{
+    --h: 100%;
+}
+
+.constuction{
+    width: 100%;
+}
