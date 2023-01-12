@@ -57,6 +57,10 @@ nav {
     padding: 10px;
 }
 
+.layout-center h1{
+    width: 100%;
+}
+
 .construction{
     width: 100%;
 }
