@@ -89,4 +89,8 @@ article {
     .layout-right{
         display: none;
     }
+
+    article{
+        top: 165px;
+    }
 }
