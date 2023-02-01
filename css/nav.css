@@ -27,10 +27,6 @@ h1{
     height: 100%;
 }
 
-#hover{
-    display: none;
-}
-
 .menu_link {
     width: 100%;
     height: 100%;
@@ -111,6 +107,10 @@ nav {
         right: 5px;
     }
 
+    #hover{
+        display: none;
+    }
+
     .logo{
         width: auto;
         height:100%;
@@ -130,6 +130,10 @@ nav {
         position: absolute;
         display: block;
         right: 5px;
+    }
+
+    #hover{
+        display: none;
     }
 
     .logo{
