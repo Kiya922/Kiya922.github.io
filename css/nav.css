@@ -25,6 +25,7 @@ h1{
 
 .menubutton img{
     height: 100%;
+    user-select: none;
 }
 
 .menu_link {
