@@ -25,6 +25,10 @@ h1{
 
 .menubutton img{
     height: 100%;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
 }
 
