@@ -12,13 +12,9 @@ function mouseUp(){
     unhover.style.display="block";
 }
 
-menubutton.addEventListener("touchstart", function(){
+menubutton.addEventListener("click", function(){
     unhover.style.display="none";
     hover.style.display="block";
-})
-
-menubutton.addEventListener("touchend", function(){
     hover.style.display="none";
     unhover.style.display="block";
 })
-
