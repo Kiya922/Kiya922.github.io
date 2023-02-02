@@ -16,14 +16,14 @@ h1{
     height: 100%;
 }
 
-.menubutton{
+#menubutton{
     height: 90%;
     padding: 0;
     border: 0;
     display: none;
 }
 
-.menubutton img{
+#menubutton img{
     height: 100%;
 }
 
@@ -79,11 +79,89 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999999;
+    z-index: 999998;
     width: 100%;
     border-bottom: 1px solid #ccc;
     background-color: #ffffff;
     justify-items: center;
+}
+
+#phone_mode_menu_bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    position: fixed;
+    background-color: #000000d0;
+    display: none;
+}
+
+.phone_mode_menu{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #f0f0f0d0;
+}
+
+.menu_name_div{
+    width: 440px;
+    border-bottom: 2px solid #000000;
+    position: absolute;
+    top: 0;
+    margin: 20px 30px 10px 30px;
+}
+
+.menu_name{
+    width: 490px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.links{
+    width: 440px;
+    height: calc(100% - 149px);
+    margin: 72px 30px 0 30px;
+    overflow-y: auto;
+}
+
+.links::-webkit-scrollbar{
+    display: none;
+}
+
+.menulink{
+    width: 440px;
+    padding:5px 0 5px 0;
+}
+
+.menulink a{
+    width: 440px;
+    display: block;
+    font-size: 35px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menulink:hover{
+    background-color: #9f9f9fd0;
+}
+
+.closer{
+    width: 440px;
+    height: 45px;
+    position: absolute;
+    bottom: 0px;
+    border-top: 2px solid #000000;
+    margin: 10px 30px 20px 30px;
+}
+
+#menu_closer{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .construction{
@@ -94,6 +172,8 @@ nav {
     .menu{
         margin-left: 10%;
     }
+
+    
 }
 
 @media (max-width:800px){
@@ -101,7 +181,7 @@ nav {
         display: none;
     }
 
-    .menubutton{
+    #menubutton{
         position: absolute;
         display: block;
         right: 5px;
@@ -126,7 +206,7 @@ nav {
         height: 150px;
     }
 
-    .menubutton{
+    #menubutton{
         position: absolute;
         display: block;
         right: 5px;
