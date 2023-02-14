@@ -33,3 +33,10 @@ menubutton.addEventListener("touchend", function(){
 closer.addEventListener("click", function(){
     mainmenu.style.display= "none";
 })
+
+window.addEventListener("resize",function(){
+    const width= window.innerWidth;
+    if(width >= 800){
+        mainmenu.style.display= "none";
+    } 
+})
