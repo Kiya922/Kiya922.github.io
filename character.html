@@ -30,9 +30,33 @@
                     </li>
                 </ul>
             </div>
-            <button class="menubutton"><img src="./img/home/menubutton.png"></button>
+            <button id="menubutton" onmouseup="mouseUp()" onmousedown="mouseDown()" onclick="click()">
+                <img src="./img/home/menubutton.png" id="unhover">
+                <img src="./img/home/menubuttonhover.png" id="hover">
+            </button>
         </div>
     </nav>
+
+    <div id="phone_mode_menu_bg">
+        <div class="phone_mode_menu">
+            <div class="menu_name_div">
+                <p class="menu_name">選單</p>
+            </div>
+            <div class="links">
+                <div class="menulink"><a href="./news.html">最新情報</a></div>
+                <div class="menulink"><a href="./character.html">角色一覽</a></div>
+                <div class="menulink"><a href="./cards.html">卡片一覽</a></div>
+                <div class="menulink"><a href="">連動</a></div>
+                <div class="menulink"><a href="">地圖</a></div>
+                <div class="menulink"><a href="">賽季</a></div>
+                <div class="menulink"><a href="">關於BM</a></div>
+                <div class="menulink"><a href="">關於能量罐</a></div>
+                <div class="menulink"><a href="">官方大賽、公認大賽</a></div>
+            </div>
+            <div class="closer"><button id="menu_closer">關閉</button></div>
+        </div>
+    </div>
+
     <div id="character-f">
         <div id="character-menu">
             <table class="character-menu">
@@ -350,6 +374,7 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </article>
+    <script src="./js/menu.js"></script>
     <script src="./js/compasscharactermenu.js"></script>
 </body>
 
