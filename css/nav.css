@@ -126,6 +126,7 @@ nav {
     height: calc(100% - 149px);
     margin: 72px 30px 0 30px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .links::-webkit-scrollbar{
