@@ -24,28 +24,132 @@
 
 .cards{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.cards td{
+.card-div{
     width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card:hover{
+    background-color: #ff8808;
 }
 
 .card{
     width: 100%;
     border: 0;
     background-color: #ffffff;
+    padding: 0;
+}
+
+.card-d{
+    width: 100%;
+    border: 0;
+    background-color: #ff8808;
+    padding: 0;
 }
 
 .card-picture{
+    width: 90%;
+    margin: 5%;
+}
+
+.card-text{
     width: 100%;
+    display: none;
+    background-color: #ff8808;
+    font-family: 'Microsoft JhengHei';
+    flex-wrap: wrap;
+}
+
+.name{
+    width: 96%;
+    height: 25px;
+    margin: 20px 2% 0 2%;
+    display: flex;
+    border-bottom: 2px solid #000000;
+}
+
+.cnt{
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
 }
 
 .card-name{
+    width: auto;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.ct{
+    width: 47%;
+    height: 25px;
+    margin: 10px 1% auto 2%;
+    display: flex;
+    border-bottom: 2px solid #000000;
+}
+
+.ctt{
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
     text-align: center;
-    font-size: 10px;
-    height: 50px;
-    background-color: #ff8808;
-    text-decoration: none;
+    background-color: #000000;
+    margin: 0;
+}
+
+.et{
+    width: 47%;
+    height: 25px;
+    margin: 10px 2% auto 1%;
+    display: flex;
+    border-bottom: 2px solid #000000;
+}
+
+.ett{
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+}
+
+.ef{
+    width: 96%;
+    height: 25px;
+    margin: 10px 2% 0 2%;
+    display: flex;
+    border-bottom: 2px solid #000000;
+}
+
+.eft{
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+}
+
+.effect{
+    width: 96%;
+    height: 125px;
+    margin: 10px 2% 20px 2%;
+    display: flex;
 }
 
 .dialog{
