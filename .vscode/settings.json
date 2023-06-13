@@ -1,0 +1,5 @@
+{
+    "easycode.model": "gpt-3.5-turbo",
+    "easycode.promptPrefix.explain": "用繁體中文，Explain what this code does: ",
+    "easycode.userEmail": "x2004514@gmail.com"
+}

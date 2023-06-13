@@ -1,0 +1,29 @@
+<html>
+    <header>
+        <link href="./css/music.css" rel="stylesheet">
+    </header>
+    <body>
+        <div class="main">
+            <div class="tools">
+                <button class="home"></button>
+            </div>
+            <img src="./img/music/Osusume_Thumbnail.jpg" class="cover">
+            <div class="slider">
+                <div class="title">
+                    <p class="name">エウレカレプリカ</p>                    
+                </div>
+                <input class="time" type="range" min="0" max="300" value="0">
+                <button class="bt">
+                    <svg id="play" style="display: flex;">
+                        <path id="play_path" d="M10 10 L27 20 M27 20 L10 30 M10 30 L10 10" stroke="#ffffff"/>
+                    </svg>
+                    <svg id="pause" style="display: none;">
+                        <path id="pause_path" d="M10 10 L27 20" stroke="#ffffff"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <audio src="./music/eurekarepurika.mp3"></audio>
+        <script src="./js/music.js"></script>
+    </body>
+</html>
