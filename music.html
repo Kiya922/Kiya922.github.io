@@ -7,23 +7,28 @@
             <div class="tools">
                 <button class="home"></button>
             </div>
-            <img src="./img/music/Osusume_Thumbnail.jpg" class="cover">
+            <img src="" id="song_img">
             <div class="slider">
                 <div class="title">
-                    <p class="name">エウレカレプリカ</p>                    
+                    <p id="name"></p>                    
                 </div>
                 <input class="time" type="range" min="0" max="300" value="0">
                 <button class="bt">
                     <svg id="play" style="display: flex;">
-                        <path id="play_path" d="M10 10 L27 20 M27 20 L10 30 M10 30 L10 10" stroke="#ffffff"/>
+                        <path id="play_path" d="M12 10 L29 20 M29 20 L12 30 M12 30 L12 10" stroke="#ffffff"/>
                     </svg>
                     <svg id="pause" style="display: none;">
-                        <path id="pause_path" d="M10 10 L27 20" stroke="#ffffff"/>
+                        <path id="pause_path" d="M10 10 L18 10 M18 10 L18 30 M18 30 L10 30 M10 30 L10 10 M22 10 L30 10 M30 10 L30 30 M30 30 L22 30 M22 30 L22 10" stroke="#ffffff"/>
+                    </svg>
+                </button>
+                <button class="bt">
+                    <svg id="next" style="display: flex;">
+                        <path id="next_path" d="M7 10 L24 20 M24 20 L7 30 M7 30 L7 10 M27 10 L32 10 M32 10 L32 30 M32 30 L27 30 M27 30 L27 10" stroke="#ffffff"/>
                     </svg>
                 </button>
             </div>
         </div>
-        <audio src="./music/eurekarepurika.mp3"></audio>
-        <script src="./js/music.js"></script>
+        <audio src="./music/1.mp3"></audio>
+        <script src="./js/music.js" charset="utf-8"></script>
     </body>
 </html>
